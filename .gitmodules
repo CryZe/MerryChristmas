@@ -1,0 +1,6 @@
+[submodule "libs/midi-dot-net"]
+	path = libs/midi-dot-net
+	url = https://github.com/jstnryan/midi-dot-net.git
+[submodule "libs/merry-christmas-in-java"]
+	path = libs/merry-christmas-in-java
+	url = https://github.com/tdziurko/merry-christmas-in-java.git
