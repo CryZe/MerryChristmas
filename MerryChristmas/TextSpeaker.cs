@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
+﻿using System.Globalization;
 using System.Speech.Synthesis;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace MerryChristmas
@@ -18,9 +14,9 @@ namespace MerryChristmas
             Synth.SelectVoiceByHints(VoiceGender.Male, VoiceAge.Adult, 0, culture);
         }
 
-        public void SpeakAsync(String text)
+        public void SpeakAsync(string text)
         {
-            if (!String.IsNullOrEmpty(text))
+            if (!string.IsNullOrEmpty(text))
             {
                 Task.Factory.StartNew(() =>
                 {
@@ -29,9 +25,9 @@ namespace MerryChristmas
             }
         }
 
-        public void Speak(String text)
+        public void Speak(string text)
         {
-            if (!String.IsNullOrEmpty(text))
+            if (!string.IsNullOrEmpty(text))
             {
                 Synth.Speak(text);
             }

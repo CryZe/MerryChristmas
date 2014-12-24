@@ -1,10 +1,7 @@
 ﻿using Midi;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace MerryChristmas
 {
@@ -29,8 +26,8 @@ namespace MerryChristmas
 
             Device = OutputDevice.InstalledDevices.First();
             Device.Open();
-            Device.SendProgramChange(Channel.Channel1, instrument);
             Channel = Channel.Channel1;
+            Device.SendProgramChange(Channel, instrument);
         }
 
         public void Dispose()
